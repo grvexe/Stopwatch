@@ -24,6 +24,10 @@ function stop(){
 }
 
 function reset(){
+    if(isRunning){
+        clearInterval(timer);
+        isRunning = false;
+    }
     display.textContent = `00:00:00:00`;
 }
 
