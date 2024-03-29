@@ -8,4 +8,53 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #0c0b12;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#display{
+    position: absolute;
+    font-size: 5rem;
+    font-family: 'Seven Segment';
+    color: #865DFF;
+}
+
+#controls {
+    margin-top: 10em;
+    display: flex;
+    gap: 2em;
+}
+
+#controls button {
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    background-color: #865DFF;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#controls button:hover{
+    background-color: #5432ba;
+}
+
+#controls button:active{
+    background-color: #a688ff;
+}
+
+
+
+/* 
+bg: #191825
+c1: #865DFF
+c2: #E384FF
+c3: #FFA3FD
+*/
