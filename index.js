@@ -36,9 +36,11 @@ function toggleStart(){
 function reset(){
     if(isRunning){
         clearInterval(timer);
-        elapsedTime = Date.now() - startTime;
+        elapsedTime = 0;
         isRunning = false;
     }
+
+    elapsedTime = 0;
     display.textContent = `00:00:00:00`;
     startbtn.textContent = "Start";
 }
