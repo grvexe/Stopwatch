@@ -40,6 +40,7 @@ function reset(){
         isRunning = false;
     }
     display.textContent = `00:00:00:00`;
+    startbtn.textContent = "Start";
 }
 
 // function to update the timer every 10 millisecond
