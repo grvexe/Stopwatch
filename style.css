@@ -1,14 +1,7 @@
-@font-face {
-    font-family: 'Seven Segment';
-    font-style: normal;
-    font-weight: normal;
-    src: url('Seven Segment.woff') format('woff');
-}
-
 body {
     margin: 0;
     padding: 0;
-    background-color: #0c0b12;
+    background: linear-gradient(220.55deg, #00E0EE 0%, #AD00FE 100%);
 }
 
 .container {
@@ -21,9 +14,10 @@ body {
 
 #display{
     position: absolute;
-    font-size: 5rem;
-    font-family: 'Seven Segment';
-    color: #865DFF;
+    font-size: 4rem;
+    font-family: monospace;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #28282880;
 }
 
 #controls {
@@ -33,28 +27,48 @@ body {
 }
 
 #controls button {
-    width: 100px;
+    width: 177.5px;
     height: 35px;
-    border: none;
     border-radius: 10px;
-    background-color: #865DFF;
-    color: #ffffff;
+    
     cursor: pointer;
+    font-weight: bold;
+
+    box-shadow: 2px 2px 20px #28282880;;
 }
 
-#controls button:hover{
-    background-color: #5432ba;
+#start {
+    border: none;
+    background-color: #FFFFFF;
+    color: #7315ff;
 }
 
-#controls button:active{
-    background-color: #a688ff;
+#start:hover{
+    
+    border: solid 2px #ffffff; 
+    background-color: transparent;
+    color: #ffffff;
 }
 
+#start:active{
+    background-color: #f1f1f1;
+    color: #7315ff;
+}
 
+#reset {
+    border: solid 2px #FFFFFF;
+    background-color: transparent;
+    color: #ffffff;
+}
 
-/* 
-bg: #191825
-c1: #865DFF
-c2: #E384FF
-c3: #FFA3FD
-*/
+#reset:hover{
+    border: none;
+    background-color: #FFFFFF;
+    color: #7315ff;
+}
+
+#reset:active{
+    border: solid 2px #FFFFFF;
+    background-color: transparent;
+    color: #ffffff;
+}
